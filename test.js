@@ -81,7 +81,7 @@ strictEqual(
 
 strictEqual(
   engine.render('<figure class="whatever"><img alt="Image(tm) with &quot;quotes&quot;" title=Hello(tm) src="/whatever"></figure>'),
-  '<figure class="whatever"><img alt=\'Image™ with “quotes”\' title=Hello™ src="/whatever"></figure>'
+  '<figure class="whatever"><img alt="Image™ with “quotes”" title=Hello™ src="/whatever"></figure>'
 )
 
 strictEqual(
