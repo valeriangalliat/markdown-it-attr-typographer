@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-attr-typographer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Enable markdown-it typographer mode on text attributes.",
   "keywords": [
     "markdown-it-plugin"
