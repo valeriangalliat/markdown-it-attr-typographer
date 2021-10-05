@@ -109,6 +109,12 @@ strictEqual(
   '<h1>Title™</h1>\n<!-- Don\'t mess with comments! -->\n<p>Hello “world”</p>\n'
 )
 
+// Empty attributes.
+strictEqual(
+  engine.render('Some <img alt="" src="/image">'),
+  '<p>Some <img alt="" src="/image"></p>\n'
+)
+
 const frenchQuotes = ['«\xA0', '\xA0»', '‹\xA0', '\xA0›']
 
 strictEqual(

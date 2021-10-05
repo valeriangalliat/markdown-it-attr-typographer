@@ -51,7 +51,7 @@ function typographer (content, options) {
  */
 function processHtml (partialHtml, md) {
   return partialHtml.replace(/<(a|abbr|img) [^>]+>/g, tag => {
-    return tag.replace(/ (?:alt|title)=(?:"([^"]+)"|'([^']+)'|([^ >]+))/g, (attr, doubleQuote, singleQuote, unquoted) => {
+    return tag.replace(/ (?:alt|title)=(?:"([^"]*)"|'([^']*)'|([^ >]+))/g, (attr, doubleQuote, singleQuote, unquoted) => {
       // Only one will be matched.
       const value = doubleQuote || singleQuote || unquoted
 
